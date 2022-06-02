@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+}
+
+.tmoble-logo {
+    height: 200px;
+}
+
+h1 {
+    color: #ed008c;
+    font-family: "Comic Sans MS", "Comic Sans", bold;
+}
+
+span {
+    background-color: #ed008c;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: #ed008c;
+    border-radius: 39px;
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 15px;
+    margin: 15px;
+}
