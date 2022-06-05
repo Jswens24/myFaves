@@ -13,19 +13,21 @@
         <h1><span>my</span>Faves</h1>
     </header>
     <main>
-        <form>
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name">
-            <input type="text" placeholder="Phone Number">
-            <input type="text" placeholder="IMG URL">
+        <form id="new-fave-form">
+            <input id="first-name" type="text" placeholder="First Name">
+            <input id="last-name" type="text" placeholder="Last Name">
+            <input id="phone-number" type="text" placeholder="Phone Number">
+            <input id="img-url" type="text" placeholder="IMG URL">
             <button>Add to myFaves</button>
         </form>
     </main>
 
-    <section id="display-faves">
+    <section id="fave-container">
 
     </section>
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
