@@ -12,7 +12,7 @@ const clearErr = (err) => console.log(err);
 
 const createNewFaveCard = (fave) => {
     let faveCard = document.createElement('div');
-    faveCard.innerHTML = `<img src='${fave.imgUrl}'>
+    faveCard.innerHTML = `<img src='${fave.imgUrl}'/>
     <h2>${fave.firstName} ${fave.lastName}</h2>
     <p>${fave.phoneNumber}</p>`
 
@@ -35,8 +35,10 @@ const createNewFave = (event) => {
     axios
         .post(baseURL + '/api/fave', reqBody)
         .then(res => {
-            console.log(res.data);
-            createNewFaveCard(res.data)
+            for (let i = 0; i < res.data.length; i++) {
+                createNewFaveCard(res.data[i])
+            }
+
         })
         .catch(clearErr);
 
