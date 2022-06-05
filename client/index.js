@@ -30,10 +30,12 @@ const createNewFave = (event) => {
         phoneNumber: newPhoneNumber.value,
         imgUrl: newImgUrl.value
     }
+    // console.log(reqBody)
 
     axios
         .post(baseURL + '/api/fave', reqBody)
         .then(res => {
+            console.log(res.data);
             createNewFaveCard(res.data)
         })
         .catch(clearErr);
