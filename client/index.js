@@ -32,7 +32,7 @@ const createNewFave = (event) => {
     }
 
     axios
-        .post(baseURL + '/fave', reqBody)
+        .post(baseURL + '/api/fave', reqBody)
         .then(res => {
             createNewFaveCard(res.data)
         })
