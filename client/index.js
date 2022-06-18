@@ -12,9 +12,9 @@ const clearErr = (err) => console.log(err);
 
 const createNewFaveCard = (fave) => {
     let faveCard = document.createElement('div');
-    faveCard.innerHTML = `<img src='${fave.imgUrl}'/>
-    <h2>${fave.firstName} ${fave.lastName}</h2>
-    <p>${fave.phoneNumber}</p>`
+    faveCard.innerHTML = `<img class='fav-img' src='${fave.imgUrl}'/>
+    <h2 class='name-of-fave'>${fave.firstName} ${fave.lastName}</h2>
+    <p class='fav-phone-number'>${fave.phoneNumber}</p>`
 
     faveContainer.appendChild(faveCard);
 }
@@ -45,3 +45,4 @@ const createNewFave = (event) => {
 }
 
 newFaveForm.addEventListener('submit', createNewFave);
+
